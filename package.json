@@ -1,0 +1,24 @@
+{
+  "name": "gasp_puerts_example5_5",
+  "version": "1.0.0",
+  "description": "Developed with Unreal Engine 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatOrange/GASP_Puerts_Example5_5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatOrange/GASP_Puerts_Example5_5/issues"
+  },
+  "homepage": "https://github.com/fatOrange/GASP_Puerts_Example5_5#readme",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}

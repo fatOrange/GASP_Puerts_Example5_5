@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "414izOUSd2Q=",
+  "success": true,
+  "projectFilePath": "F:\\workspace\\GASP_Puerts_Example5_5\\Plugins\\Puerts\\Source\\CSharpParamDefaultValueMetas\\CSharpParamDefaultValueMetas.ubtplugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asd13\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
