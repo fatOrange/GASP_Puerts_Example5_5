@@ -4,7 +4,6 @@
   "description": "Developed with Unreal Engine 5",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start":"tsc --watch"
   },
   "repository": {

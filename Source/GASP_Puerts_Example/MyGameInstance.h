@@ -18,6 +18,12 @@ public:
 	virtual void OnStart() override;
 
 	virtual void Shutdown() override;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Debug")
+	bool bDebugMode;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Debug")
+	bool bWaitForDebugger;
 
 private:
 	TSharedPtr<puerts::FJsEnv> GameScript;

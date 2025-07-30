@@ -21165,576 +21165,7 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Water.FluidSimulation.Blueprints.Structs.FluidForceImpulsePerInstanceData {
-        class FluidForceImpulsePerInstanceData {
-            constructor();
-            constructor(ImpulseSettings: UE.Water.FluidSimulation.Blueprints.Structs.FluidForceImpulse.FluidForceImpulse, ElapsedTime: number, StartOffset: number, IsSplashEffect: boolean);
-            ["Impulse Settings"]: UE.Water.FluidSimulation.Blueprints.Structs.FluidForceImpulse.FluidForceImpulse;
-            ["Elapsed Time"]: number;
-            ["Start Offset"]: number;
-            ["Is Splash Effect"]: boolean;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_FluidForceImpulsePerInstanceData_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Water.FluidSimulation.Blueprints.Structs.FluidForceImpulse {
-        class FluidForceImpulse {
-            constructor();
-            constructor(WorldPosition: UE.Vector, ForceRadius: number, ForceStrength: number, MaterialOverride: UE.MaterialInterface, Lifetime: number, StrengthoverLifePower: number, TimedWaterDropSplashes: UE.Water.FluidSimulation.Blueprints.Structs.FluidForceImpulseTimedEffects.FluidForceImpulseTimedEffects);
-            ["World Position"]: UE.Vector;
-            ["Force Radius"]: number;
-            ["Force Strength"]: number;
-            MaterialOverride: UE.MaterialInterface;
-            Lifetime: number;
-            ["Strength over Life Power"]: number;
-            ["Timed Water Drop Splashes"]: UE.Water.FluidSimulation.Blueprints.Structs.FluidForceImpulseTimedEffects.FluidForceImpulseTimedEffects;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_FluidForceImpulse_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Water.FluidSimulation.Blueprints.Structs.FluidForceImpulseTimedEffects {
-        class FluidForceImpulseTimedEffects {
-            constructor();
-            constructor(EnableWaterDropsEffect: boolean, EffectRadius: number, Strength: number, WaterDropsperSquareMeter: number, StartTimeOffset: number, Lifetime: number, StrengthoverLifePower: number, MaterialOverride: UE.MaterialInterface);
-            ["Enable Water Drops Effect"]: boolean;
-            ["Effect Radius"]: number;
-            Strength: number;
-            ["Water Drops per Square Meter"]: number;
-            ["Start Time Offset"]: number;
-            Lifetime: number;
-            ["Strength over Life Power"]: number;
-            ["Material Override"]: UE.MaterialInterface;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_FluidForceImpulseTimedEffects_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Water.FluidSimulation.Blueprints.Structs.FluidForceDynamicPerInstanceData {
-        class FluidForceDynamicPerInstanceData {
-            constructor();
-            constructor(ForceInfo: UE.Water.FluidSimulation.Blueprints.Structs.FluidForceDynamic.FluidForceDynamic, ComponentLocation: UE.Vector, ComponentVelocity: UE.Vector, BoundsRadius: number, WaterLevel: number, SocketLocationMap: TMap<string, UE.Vector>, SocketVelocityMap: TMap<string, UE.Vector>);
-            ["Force Info"]: UE.Water.FluidSimulation.Blueprints.Structs.FluidForceDynamic.FluidForceDynamic;
-            ["Component Location"]: UE.Vector;
-            ["Component Velocity"]: UE.Vector;
-            ["Bounds Radius"]: number;
-            ["Water Level"]: number;
-            SocketLocationMap: TMap<string, UE.Vector>;
-            SocketVelocityMap: TMap<string, UE.Vector>;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_FluidForceDynamicPerInstanceData_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Water.FluidSimulation.Blueprints.Structs.FluidForceDynamic {
-        class FluidForceDynamic {
-            constructor();
-            constructor(ForceType: UE.Water.FluidSimulation.Blueprints.Enums.FluidDynamicForceMeshType.FluidDynamicForceMeshType, ForceRadius: number, ForceStrength: number, ForceComponent: UE.SceneComponent, MaterialOverride: UE.MaterialInterface, SkeletalMeshSetup: UE.Water.FluidSimulation.Blueprints.Structs.FluidForceSocketInfo.FluidForceSocketInfo);
-            ["Force Type"]: UE.Water.FluidSimulation.Blueprints.Enums.FluidDynamicForceMeshType.FluidDynamicForceMeshType;
-            ["Force Radius"]: number;
-            ["Force Strength"]: number;
-            ["Force Component"]: UE.SceneComponent;
-            ["Material Override"]: UE.MaterialInterface;
-            ["Skeletal Mesh Setup"]: UE.Water.FluidSimulation.Blueprints.Structs.FluidForceSocketInfo.FluidForceSocketInfo;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_FluidForceDynamic_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Water.FluidSimulation.Blueprints.Structs.FluidForceSocketInfo {
-        class FluidForceSocketInfo {
-            constructor();
-            constructor(SocketsandEndpoints: TMap<string, string>);
-            ["Sockets and Endpoints"]: TMap<string, string>;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_FluidForceSocketInfo_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Water.Caustics.Blueprints.CausticsWaveSpectrumSettings {
-        class CausticsWaveSpectrumSettings {
-            constructor();
-            constructor(MaxWaves: number, Seed: number, MinWavelength: number, MaxWavelength: number, WavelengthFalloff: number, MinAmplitude: number, MaxAmplitude: number, AmplitudeFalloff: number, DominantWindDirection: UE.Vector2D, DirectionAngularSpread: number, SmallWaveSteepness: number, LargeWaveSteepness: number, SteepnessFalloff: number);
-            MaxWaves: number;
-            Seed: number;
-            MinWavelength: number;
-            MaxWavelength: number;
-            WavelengthFalloff: number;
-            MinAmplitude: number;
-            MaxAmplitude: number;
-            AmplitudeFalloff: number;
-            DominantWindDirection: UE.Vector2D;
-            DirectionAngularSpread: number;
-            SmallWaveSteepness: number;
-            LargeWaveSteepness: number;
-            SteepnessFalloff: number;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_CausticsWaveSpectrumSettings_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.ErosionInterface {
-        class ErosionInterface {
-            constructor();
-            constructor(HeightRTA: UE.TextureRenderTarget2D, HeightRTB: UE.TextureRenderTarget2D, FluidVelA: UE.TextureRenderTarget2D, FluidVelB: UE.TextureRenderTarget2D, SceneCaptureRT: UE.TextureRenderTarget2D, SceneCaptureComp: UE.SceneCaptureComponent2D, PosRTA: UE.TextureRenderTarget2D, PosRTB: UE.TextureRenderTarget2D);
-            ["Height RT A"]: UE.TextureRenderTarget2D;
-            ["Height RT B"]: UE.TextureRenderTarget2D;
-            ["Fluid Vel A"]: UE.TextureRenderTarget2D;
-            ["Fluid Vel B"]: UE.TextureRenderTarget2D;
-            ["Scene Capture RT"]: UE.TextureRenderTarget2D;
-            ["Scene Capture Comp"]: UE.SceneCaptureComponent2D;
-            ["Pos RT A"]: UE.TextureRenderTarget2D;
-            ["Pos RT B"]: UE.TextureRenderTarget2D;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_ErosionInterface_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.ProcMeshData {
-        class ProcMeshData {
-            constructor();
-            constructor(Verts: TArray<UE.Vector>, Tris: TArray<number>, UVs: TArray<UE.Vector2D>, UV1s: TArray<UE.Vector2D>);
-            Verts: TArray<UE.Vector>;
-            Tris: TArray<number>;
-            UVs: TArray<UE.Vector2D>;
-            UV1s: TArray<UE.Vector2D>;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_ProcMeshData_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.BrushWM {
-        class BrushWM {
-            constructor();
-            constructor(WeightmapName: string, FalloffWidth: number, EdgeOffset: number, Texture: UE.Texture2D, TextureTiling: number, Midpoint: number, TextureInfluence: number, FinalOpacity: number, ZRangeMask: UE.Landmass.Landscape.OldPrototype_BP.Structs.BrushZMask.BrushZMask);
-            ["Weightmap Name"]: string;
-            ["Falloff Width"]: number;
-            ["Edge Offset"]: number;
-            Texture: UE.Texture2D;
-            ["Texture Tiling"]: number;
-            Midpoint: number;
-            ["Texture Influence"]: number;
-            ["Final Opacity"]: number;
-            ["Z Range Mask"]: UE.Landmass.Landscape.OldPrototype_BP.Structs.BrushZMask.BrushZMask;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_BrushWM_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.BrushZMask {
-        class BrushZMask {
-            constructor();
-            constructor(UseZMask: boolean, MaskLength: number, ZOffset: number, UseAbsolute: boolean);
-            ["Use Z Mask"]: boolean;
-            ["Mask Length"]: number;
-            ["Z Offset"]: number;
-            ["Use Absolute"]: boolean;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_BrushZMask_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.RenderTargetChannels {
-        class RenderTargetChannels {
-            constructor();
-            constructor(RT: UE.TextureRenderTarget2D, R: string, G: string, B: string, A: string, ResolutionDivisor: number);
-            RT: UE.TextureRenderTarget2D;
-            R: string;
-            G: string;
-            B: string;
-            A: string;
-            ["Resolution Divisor"]: number;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_RenderTargetChannels_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.ErodeWeightmap {
-        class ErodeWeightmap {
-            constructor();
-            constructor(WeightmapName: string, DepositionStrength: number, ErosionStrength: number, VelocityStrength: number);
-            ["Weightmap Name"]: string;
-            ["Deposition Strength"]: number;
-            ["Erosion Strength"]: number;
-            ["Velocity Strength"]: number;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_ErodeWeightmap_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Erosion_Keyframe {
-        class Landmass_Erosion_Keyframe {
-            constructor();
-            constructor(KeyName: string, ErosionMode: UE.Landmass.Landscape.ErosionBrush.BP.Enums.E_Landmass_CustomBrush_ErosionModes.E_Landmass_CustomBrush_ErosionModes, ParticleErosion: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Particle_Erosion_Settings.Landmass_Particle_Erosion_Settings, SlopeSmoothing: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_SlopeSmoothing_Settings.Landmass_SlopeSmoothing_Settings, WaterLevelling: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_WaterLevelling_Settings.Landmass_WaterLevelling_Settings, NoiseInjection: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Erosion_NoiseInjection.Landmass_Erosion_NoiseInjection, CustomMaterial: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Erosion_CustomMaterial.Landmass_Erosion_CustomMaterial);
-            ["Key Name"]: string;
-            ["Erosion Mode"]: UE.Landmass.Landscape.ErosionBrush.BP.Enums.E_Landmass_CustomBrush_ErosionModes.E_Landmass_CustomBrush_ErosionModes;
-            ["Particle Erosion"]: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Particle_Erosion_Settings.Landmass_Particle_Erosion_Settings;
-            ["Slope Smoothing"]: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_SlopeSmoothing_Settings.Landmass_SlopeSmoothing_Settings;
-            ["Water Levelling"]: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_WaterLevelling_Settings.Landmass_WaterLevelling_Settings;
-            ["Noise Injection"]: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Erosion_NoiseInjection.Landmass_Erosion_NoiseInjection;
-            ["Custom Material"]: UE.Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Erosion_CustomMaterial.Landmass_Erosion_CustomMaterial;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_Erosion_Keyframe_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Particle_Erosion_Settings {
-        class Landmass_Particle_Erosion_Settings {
-            constructor();
-            constructor(ErosionIterations: number, ResetParticlesEveryNIterations: number, StartingWaterAmount: number, DeltaT: number, Solubility: number, Evaporation: number, VelocityDamping: number, VelocityAdvection: number, ErodeWeightmaps: TArray<UE.Landmass.Landscape.OldPrototype_BP.Structs.ErodeWeightmap.ErodeWeightmap>, ResolutionDivisor: number);
-            ["Erosion Iterations"]: number;
-            ["Reset Particles Every N Iterations"]: number;
-            ["Starting Water Amount"]: number;
-            ["Delta T"]: number;
-            Solubility: number;
-            Evaporation: number;
-            ["Velocity Damping"]: number;
-            ["Velocity Advection"]: number;
-            ["Erode Weightmaps"]: TArray<UE.Landmass.Landscape.OldPrototype_BP.Structs.ErodeWeightmap.ErodeWeightmap>;
-            ["Resolution Divisor"]: number;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_Particle_Erosion_Settings_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_SlopeSmoothing_Settings {
-        class Landmass_SlopeSmoothing_Settings {
-            constructor();
-            constructor(Iterations: number, SmoothSlopesGreaterThan: number, SmoothSlopesLessThan: number, Opacity: number);
-            Iterations: number;
-            ["Smooth Slopes Greater Than"]: number;
-            ["Smooth Slopes Less Than"]: number;
-            Opacity: number;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_SlopeSmoothing_Settings_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_WaterLevelling_Settings {
-        class Landmass_WaterLevelling_Settings {
-            constructor();
-            constructor(Iterations: number, ResetWaterEveryNIterations: number, StartingWaterAmount: number, RainPerIteration: number, Solubility: number, Evaporation: number, ErodeWeightmaps: TArray<UE.Landmass.Landscape.OldPrototype_BP.Structs.ErodeWeightmap.ErodeWeightmap>);
-            Iterations: number;
-            ["Reset Water Every N Iterations"]: number;
-            ["Starting Water Amount"]: number;
-            ["Rain Per Iteration"]: number;
-            Solubility: number;
-            Evaporation: number;
-            ["Erode Weightmaps"]: TArray<UE.Landmass.Landscape.OldPrototype_BP.Structs.ErodeWeightmap.ErodeWeightmap>;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_WaterLevelling_Settings_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Erosion_NoiseInjection {
-        class Landmass_Erosion_NoiseInjection {
-            constructor();
-            constructor(NoiseHeightMeters: number, NoiseScaleMeters: number, NoiseOctaves: number, NoisePersistence: number, NoiseSeed: number, Turbulence: boolean, NoiseFloor0_1: number, SlopeMask: UE.Landmass.Landscape.BlueprintBrushes.Structs.LandmassBrush_SlopeMask_Settings.LandmassBrush_SlopeMask_Settings);
-            ["Noise Height Meters"]: number;
-            ["Noise Scale Meters"]: number;
-            ["Noise Octaves"]: number;
-            ["Noise Persistence"]: number;
-            ["Noise Seed"]: number;
-            Turbulence: boolean;
-            ["Noise Floor 0-1"]: number;
-            SlopeMask: UE.Landmass.Landscape.BlueprintBrushes.Structs.LandmassBrush_SlopeMask_Settings.LandmassBrush_SlopeMask_Settings;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_Erosion_NoiseInjection_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.BlueprintBrushes.Structs.LandmassBrush_SlopeMask_Settings {
-        class LandmassBrush_SlopeMask_Settings {
-            constructor();
-            constructor(EnableSlopeMask: boolean, MinSlope: number, MaxSlope: number, SlopeFalloff: number);
-            ["Enable Slope Mask"]: boolean;
-            ["Min Slope"]: number;
-            ["Max Slope"]: number;
-            ["Slope Falloff"]: number;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_LandmassBrush_SlopeMask_Settings_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.ErosionBrush.BP.Structs.Landmass_Erosion_CustomMaterial {
-        class Landmass_Erosion_CustomMaterial {
-            constructor();
-            constructor(Iterations: number, Material: UE.MaterialInterface, ScalarParameters: TMap<string, number>, VectorParameters: TMap<string, UE.LinearColor>, TextureParameters: TMap<string, UE.Texture2D>);
-            Iterations: number;
-            Material: UE.MaterialInterface;
-            ["Scalar Parameters"]: TMap<string, number>;
-            ["Vector Parameters"]: TMap<string, UE.LinearColor>;
-            ["Texture Parameters"]: TMap<string, UE.Texture2D>;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_Erosion_CustomMaterial_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.SplineMeshInfo {
-        class SplineMeshInfo {
-            constructor();
-            constructor(Mesh: UE.StaticMesh, RelativeDrawscale: UE.Vector, MeshLength: number);
-            Mesh: UE.StaticMesh;
-            ["Relative Drawscale"]: UE.Vector;
-            ["Mesh Length"]: number;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_SplineMeshInfo_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.BPWaterBodyWeightmapSettings {
-        class BPWaterBodyWeightmapSettings {
-            constructor();
-            constructor(FalloffWidth: number, EdgeOffset: number, ModulationTexture: UE.Texture2D, TextureTiling: number, TextureInfluence: number, Midpoint: number, FinalOpacity: number, MaskUsingBand: boolean, BandThickness: number);
-            ["Falloff Width"]: number;
-            ["Edge Offset"]: number;
-            ["Modulation Texture"]: UE.Texture2D;
-            ["Texture Tiling"]: number;
-            ["Texture Influence"]: number;
-            Midpoint: number;
-            ["Final Opacity"]: number;
-            ["Mask Using Band"]: boolean;
-            ["Band Thickness"]: number;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_BPWaterBodyWeightmapSettings_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_Quadtree {
-        class Landmass_Quadtree {
-            constructor();
-            constructor(CurrentLevel: number, ParentIndex: number, Actors: TArray<UE.Actor>, index_x0y0: number, index_x1y0: number, index_x0y1: number, index_x1y1: number, ChildDataCount: number, Extents: UE.Vector4);
-            ["Current Level"]: number;
-            ["Parent Index"]: number;
-            Actors: TArray<UE.Actor>;
-            index_x0y0: number;
-            index_x1y0: number;
-            index_x0y1: number;
-            index_x1y1: number;
-            ["Child Data Count"]: number;
-            Extents: UE.Vector4;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_Quadtree_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_Quadtree_Data {
-        class Landmass_Quadtree_Data {
-            constructor();
-            constructor(QuadTree: TArray<UE.Landmass.Landscape.BlueprintBrushes.Structs.Landmass_Quadtree.Landmass_Quadtree>);
-            QuadTree: TArray<UE.Landmass.Landscape.BlueprintBrushes.Structs.Landmass_Quadtree.Landmass_Quadtree>;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_Quadtree_Data_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_Cache_Affect_Values {
-        class Landmass_Cache_Affect_Values {
-            constructor();
-            constructor(AffectHeightmap: boolean, AffectWeightmap: boolean, AffectsVisibility: boolean);
-            ["Affect Heightmap"]: boolean;
-            ["Affect Weightmap"]: boolean;
-            ["Affects Visibility"]: boolean;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_Cache_Affect_Values_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.WaterBrushCache {
-        class WaterBrushCache {
-            constructor();
-            constructor(CacheRenderTarget: UE.TextureRenderTarget2D, CacheIsValid: boolean);
-            CacheRenderTarget: UE.TextureRenderTarget2D;
-            CacheIsValid: boolean;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_WaterBrushCache_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
+// __TYPE_DECL_START: E03055A649719266B45291B4E4545149
     namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_WeightmapSettings {
         class Landmass_WeightmapSettings {
             constructor();
@@ -21758,7 +21189,7 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
+// __TYPE_DECL_START: 7908B20E4199ECCC3C9C84B8F4957AD4
     namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_NoisePass_WeightMapSettings {
         class Landmass_NoisePass_WeightMapSettings {
             constructor();
@@ -21784,7 +21215,7 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
+// __TYPE_DECL_START: 9B8D3FC34CE46764D68464B558795590
     namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_NoisePass_HeightSettings {
         class Landmass_NoisePass_HeightSettings {
             constructor();
@@ -21812,7 +21243,7 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
+// __TYPE_DECL_START: 653D8246436FF6039AADE185E2BC53E6
     namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_EdgeFalloffSettings {
         class Landmass_EdgeFalloffSettings {
             constructor();
@@ -21834,7 +21265,7 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
+// __TYPE_DECL_START: 0937F4AD43610FE896144985CE40148D
     namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_EdgeFalloffNoiseSettings {
         class Landmass_EdgeFalloffNoiseSettings {
             constructor();
@@ -21855,24 +21286,7 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_EmptyStruct {
-        class Landmass_EmptyStruct {
-            constructor();
-            constructor(MemberVar_0: boolean);
-            MemberVar_0: boolean;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_Landmass_EmptyStruct_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
+// __TYPE_DECL_START: 4E7E62AC463C985D1C46AC9EB091D34D
     namespace Landmass.Landscape.BlueprintBrushes.Structs.LandmassBrush_ElevationMask_Settings {
         class LandmassBrush_ElevationMask_Settings {
             constructor();
@@ -21892,7 +21306,7 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
+// __TYPE_DECL_START: ABF5FD034B578E53A115FD9610518EEB
     namespace Landmass.Landscape.BlueprintBrushes.Structs.Landmass_NoiseSettings {
         class Landmass_NoiseSettings {
             constructor();
@@ -21917,67 +21331,24 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Landmass.Landscape.OldPrototype_BP.Structs.LandscapeTextureData {
-        class LandscapeTextureData {
-            constructor();
-            constructor(ColorData: TArray<UE.LinearColor>);
-            ColorData: TArray<UE.LinearColor>;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_LandscapeTextureData_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Engine.ArtTools.RenderToTexture.Blueprints.PhysMesh {
-        class PhysMesh {
-            constructor();
-            constructor(SMesh: UE.StaticMesh, Transform: UE.Transform);
-            SMesh: UE.StaticMesh;
-            Transform: UE.Transform;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_PhysMesh_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: ASSOCIATION
-    namespace Engine.ArtTools.RenderToTexture.Blueprints.TilingMesh {
-        class TilingMesh {
-            constructor();
-            constructor(StaticMesh: UE.StaticMesh, Transform: UE.Transform, Material: UE.MaterialInstanceConstant, Visible: boolean, DisplacementTexture: UE.Texture);
-            StaticMesh: UE.StaticMesh;
-            Transform: UE.Transform;
-            Material: UE.MaterialInstanceConstant;
-            Visible: boolean;
-            DisplacementTexture: UE.Texture;
-            /**
-             * @deprecated use StaticStruct instead.
-             */
-            static StaticClass(): ScriptStruct;
-            static StaticStruct(): ScriptStruct;
-            __tid_TilingMesh_0__: boolean;
-        }
-        
-    }
-
-// __TYPE_DECL_END
-// __TYPE_DECL_START: 51C1FBD046011AB5726197B48A97DEA8
+// __TYPE_DECL_START: 91DD298E42E38B820CB8E5B328741F96
     namespace Game.Blueprints.BP_Cube {
         class BP_Cube_C extends UE.Actor {
             constructor(Outer?: Object, Name?: string, ObjectFlags?: number);
+            UberGraphFrame: UE.PointerToUberGraphFrame;
+            Cube: UE.StaticMeshComponent;
             DefaultSceneRoot: UE.SceneComponent;
+            ExecuteUbergraph_BP_Cube(EntryPoint: number) : void;
+            /*
+             *Event when play begins for this actor.
+             */
+            ReceiveBeginPlay() : void;
+            /*
+             *Event called every frame, if ticking is enabled
+             */
+            ReceiveTick(DeltaSeconds: number) : void;
+            TS_CreatePlayerInfo(Output_playerInfo: $Ref<UE.Game.Blueprints.S_Player.S_Player>) : void;
+            TS_PrintHelloWorld(InputStr: $Ref<string>, OutputStr: $Ref<string>) : void;
             static StaticClass(): Class;
             static Find(OrigInName: string, Outer?: Object): BP_Cube_C;
             static Load(InName: string): BP_Cube_C;
@@ -21988,18 +21359,49 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: ECB22C2849155502668402A846E80610
-    namespace DatasmithContent.Datasmith.AreaLightsStruct {
-        class AreaLightsStruct {
+// __TYPE_DECL_START: F48144614CB5C4DE5DCB5CB5E7929B1D
+    namespace Game.Blueprints.BP_MyGameInstance {
+        class BP_MyGameInstance_C extends UE.MyGameInstance {
+            constructor(Outer?: Object, Name?: string, ObjectFlags?: number);
+            static StaticClass(): Class;
+            static Find(OrigInName: string, Outer?: Object): BP_MyGameInstance_C;
+            static Load(InName: string): BP_MyGameInstance_C;
+        
+            __tid_BP_MyGameInstance_C_0__: boolean;
+        }
+        
+    }
+
+// __TYPE_DECL_END
+// __TYPE_DECL_START: 50A3FC8341915A93A65C4C84E5526D82
+    namespace Game.Blueprints.S_Player {
+        class S_Player {
             constructor();
-            constructor(Mesh: UE.StaticMesh);
-            Mesh: UE.StaticMesh;
+            constructor(Username: string, ID: UE.Guid);
+            Username: string;
+            ID: UE.Guid;
             /**
              * @deprecated use StaticStruct instead.
              */
             static StaticClass(): ScriptStruct;
             static StaticStruct(): ScriptStruct;
-            __tid_AreaLightsStruct_0__: boolean;
+            __tid_S_Player_0__: boolean;
+        }
+        
+    }
+
+// __TYPE_DECL_END
+// __TYPE_DECL_START: 0AFE9FCB421A6570491E128129CE2A70
+    namespace Game.Blueprints.BP_Ball {
+        class BP_Ball_C extends UE.Actor {
+            constructor(Outer?: Object, Name?: string, ObjectFlags?: number);
+            Sphere: UE.StaticMeshComponent;
+            DefaultSceneRoot: UE.SceneComponent;
+            static StaticClass(): Class;
+            static Find(OrigInName: string, Outer?: Object): BP_Ball_C;
+            static Load(InName: string): BP_Ball_C;
+        
+            __tid_BP_Ball_C_0__: boolean;
         }
         
     }
